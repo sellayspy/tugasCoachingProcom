@@ -1,0 +1,21 @@
+import React, { useState } from "react";
+
+const Form = () => {
+  const [name, setName] = useState("");
+
+  handleChangeName = (e) => {
+    setName(e.target.value);
+  };
+  return (
+    <div>
+      <input
+        type="text"
+        value={name}
+        onChange={handleChangeName}
+        placeholder="Masukan nama"
+      />
+    </div>
+  );
+};
+
+export default Form;
